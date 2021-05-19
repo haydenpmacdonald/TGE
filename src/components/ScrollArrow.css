@@ -1,0 +1,27 @@
+.scrollTop {
+    position: fixed; 
+    bottom: 40px;
+    left: 90%;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 1s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .scrollTop {left: 80%;}
+  }
