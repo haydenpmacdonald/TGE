@@ -40,11 +40,11 @@ const Hero = () => {
                         <br></br>
 
                         <Col>
-                            <Row>
-                            <p className='heading2 animate-pop-up'>RESIDENTIAL </p>&nbsp; <p className='heading3 animate-pop-up'> & COMMERCIAL</p>&nbsp; <p className='heading4 animate-pop-up'> SERVICES SINCE</p>&nbsp; <p className='heading5 animate-pop-up yellow'> 1980</p>
-                            </Row>
+                            <div>
+                                <p className='heading2 animate-pop-up hero--row '>RESIDENTIAL </p>&nbsp; <p className='heading3 animate-pop-up hero--row '> & COMMERCIAL</p>&nbsp; <p className='heading4 animate-pop-up hero--row '> SERVICES SINCE</p>&nbsp; <p className='heading5 animate-pop-up yellow hero--row '> 1980</p>
+                            </div>
                         </Col>
-                        <Col>
+                        <div>
                             <button className='hero--button heading6 animate-pop-up'>
                                 <Link 
                                     className='hero--link--style' 
@@ -52,7 +52,7 @@ const Hero = () => {
                                         contact <i className="far fa-envelope"></i>
                                 </Link>
                             </button>   
-                        </Col>
+                        </div>
                     </div>
                    
                 </div> 

@@ -80,28 +80,17 @@ section {
     max-height: 800px;
 }
 
-.overlay--component {
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-    border-radius: 20px;
-    color: black;
-    width: 400px;
-    height: 200px;
-    width: 40%;
-    margin: 20px;
-    border-style: solid;
-    display: inline-block;
-    vertical-align: top;
-    border-width: 1px;
-    border-color: rgb(68, 71, 72);
-    padding: 20px;
-    box-shadow: 1px 1px 2px rgb(105, 103, 103), 0 0 25px rgb(101, 102, 102), 0 0 5px rgb(0, 0, 0);
-}
+
 
 .hero--image {
     height: 45px;
     width: auto;
     margin: 05px;
     color: rgb(253, 209, 10);
+}
+
+.hero--row {
+    display: inline-block;
 }
 
 .underline--animation {
@@ -141,11 +130,7 @@ section {
         font-size: 12px;
         height: 200px;
     }
-    .overlay--component {
-        width: 60%;
-        height: 150px;
-        padding-top: 10px;
-    }
+ 
     .landing--page--button {
         width: 100%;
     }
@@ -161,10 +146,12 @@ section {
 }
 
 @media only screen and (max-width: 900px) {
-    .overlay--component {
-      height: 150px;
-      padding-top: 10px;
-      margin: 0px;
+    .hero--header {
+        text-align: center;
+    }
+    .hero--overlay {
+      padding: 100px 40px;
+      text-align: center;
     }
     .hero--image {
         height: 27px; width: auto;
@@ -175,6 +162,10 @@ section {
     .col {
         padding-top: 20px;
         width: 80%;
+    }
+    .hero--row {
+        font-size: 10px;
+        display: inline-block;
     }
     
     .logo--image {

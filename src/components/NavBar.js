@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { Image } from 'react-bootstrap';
 
 const NavBar = () => {
     useEffect(() => {
@@ -27,7 +26,7 @@ const NavBar = () => {
                 <div className="navbar-container">
                     <ul>
                         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                            <Image className='logo-image' src='images/TGE.svg' alt='total glass effects logo'></Image>
+                            TGE
                         </Link>
                     </ul>
                     <div className='menu-icon' onClick={handleClick}>
