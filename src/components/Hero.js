@@ -1,17 +1,10 @@
 import React from 'react';
 import './Hero.css';
 import { Row, Col } from 'react-bootstrap';
-import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(1),
-      },
-    },
-  }));
+
 
   document.body.className += ' js-loading';
 
@@ -30,7 +23,7 @@ function showPage(){
 
 
 const Hero = () => {
-    const classes = useStyles();
+
     return (
         <div>
             <section className='hero--section'>
@@ -56,7 +49,7 @@ const Hero = () => {
                                 <Link 
                                     className='hero--link--style' 
                                     to='/contact'>
-                                        contact <i class="far fa-envelope"></i>
+                                        contact <i className="far fa-envelope"></i>
                                 </Link>
                             </button>   
                         </Col>

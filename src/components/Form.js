@@ -1,20 +1,11 @@
 import React from 'react'
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
 import './Form.css';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& .MuiTextField-root': {
-        margin: theme.spacing(1),
-        width: '100%',
-      },
-    },
-  }));
 
 const Form = () => {
-    const classes = useStyles();
+
     return (
         <div className='form--container'>
             <div className='left--cont'>
@@ -31,13 +22,13 @@ const Form = () => {
                         <br></br>
                         <br></br>
                         <div className='responsive--arrow'>
-                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <i className="far fa-arrow-alt-circle-down"></i>
                         </div>
                     </div>
                 </div>
             </div> 
             <div className='right--cont'>
-            <form className={classes.root} noValidate autoComplete="off">
+            <form noValidate autoComplete="off">
                 <div>
                     <h2>Ready to start a project?</h2>
                     <h2 className='contact--header'>let's chat!</h2>
